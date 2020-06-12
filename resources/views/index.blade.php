@@ -1,6 +1,6 @@
 <h1>Index</h1>
 
-
+<a href="{{action('PetController@create')}}">add a dog</a>
 
 <ul>
 @foreach($list as $l)

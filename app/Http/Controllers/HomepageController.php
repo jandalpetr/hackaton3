@@ -26,4 +26,5 @@ class HomepageController extends Controller
        
         return view('/show', compact('owner', 'pet'));
     }
+    
 }
