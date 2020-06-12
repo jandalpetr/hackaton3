@@ -8,8 +8,9 @@
    <li> {{ $l->breed}}</li>
    <li> {{ $l->weight}}</li>
    <li> {{ $l->age}}</li>
+   <li> client {{ $l->client_id}}</li>
    <br>
-   <p>Dog ID</p> <a href="">{{$l->id}}</a>
+   <p>Dog ID</p> <a href="/index/{{$l->id}}">{{$l->id}}</a>
    
 
 @endforeach
