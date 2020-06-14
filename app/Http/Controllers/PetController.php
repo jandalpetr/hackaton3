@@ -7,26 +7,26 @@ use Illuminate\Http\Request;
 
 class PetController extends Controller
 {
-public function create(){
+public function create($id){
 
-    $pet = new Pets;
-
-    return view('dogs/create');
+    $client = Clients::FindOrFail($id);
+   
+    return view('dogs/create', compact('client'));
 
 
 }
 public function store(Request $request){
-   
     $pet = new Pets;
-    
+   
         $pet->name = $request->input('name');
         $pet->client_id = $request->input('client_id');
+        
         $pet->doctor_id = $request->input('doctor_id');
         $pet->breed = $request->input('breed');
         $pet->weight = $request->input('weight');
         
         $pet->save();
-        
+        session()->flash('success_message', 'The pet was successfully saved!');
         return redirect('/pet/' . $pet->id);
 
     }

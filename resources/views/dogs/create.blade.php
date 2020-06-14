@@ -1,12 +1,12 @@
 
 
 
+{{$client->id}}
 
 
 
 
-
-<form method="post" action="/pet">
+<form method="post" action="/pet/store">
 
     @csrf
     <div>
@@ -14,8 +14,8 @@
         <input type="text" name="name">
     </div>
     <div>
-        <label>client id </label>
-        <input type="text" name="client_id">
+    <input type="hidden" name="client_id" value="{{$client->id}}">
+     
     </div>
     <div>
         <label>doctorid</label>
