@@ -3,6 +3,7 @@
 <form method="post" action="/client">
 
 @csrf
+
 <div>
     <label>first name</label>
     <input type="text" name="first_name">

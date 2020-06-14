@@ -1,14 +1,11 @@
 
 
 
-{{$client->id}}
-
-
-
 
 <form method="post" action="/pet/store">
 
     @csrf
+    
     <div>
         <label>name</label>
         <input type="text" name="name">
