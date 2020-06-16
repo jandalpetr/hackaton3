@@ -2,7 +2,7 @@
 
 
 <h2>Client</h2>
-{{ $client }}
+
 
 <p>your name -{{$client->first_name}}</p>
 <p>surname -{{$client->surname}}</p>

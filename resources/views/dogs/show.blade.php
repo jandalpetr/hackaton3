@@ -8,5 +8,5 @@
 {{$pet->breed}}<br>
 {{$pet->weight}}<br>
 
-
+<a href="/pet/{{$pet->id}}/edit">edit this Pet</a>
 

@@ -1,4 +1,4 @@
-
+@section('content')
 
 <form method="post" action="/client">
 
@@ -22,3 +22,4 @@
 </div>
 <button type="submit">Save client!</button>
 </form>
+@endsection

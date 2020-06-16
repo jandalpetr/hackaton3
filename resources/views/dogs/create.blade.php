@@ -1,3 +1,8 @@
+@extends('layouts.layout', [
+    'title' => 'Add a new Pet'
+])
+
+@section('content')
 
 
 
@@ -24,3 +29,4 @@
     </div>
     <button type="submit">Save my new Pet!</button>
 </form>
+@endsection
