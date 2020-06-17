@@ -1,3 +1,9 @@
+@extends('layouts.layout', [
+    'title' => 'Saviour profile'
+])
+
+@section('content')
+
 <h1>Details of the Client</h1>
 
 
@@ -11,7 +17,7 @@
 <p>phone -{{$client->phone}}</p>
 
 <div class="add pet">
-   <a href="/pet/create/{{$client->id}}"><p>Add Pets for Mr/Mrs{{$client->first_name}}</p></a> 
+<p><a href="/pet/create/{{$client->id}}">Add Pets for Mr/Mrs{{$client->first_name}}</a> </p>
     <p>With owner id {{$client->id}}</p>
 </div>
 <div class="edit client">
@@ -35,3 +41,4 @@
 </ul>
 
 
+@endsection

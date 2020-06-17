@@ -1,3 +1,12 @@
+
+@extends('layouts.layout', [
+    'title' => 'list of pets'
+])
+
+@section('content')
+
+
+
 <form method="post" action="/client/update/{{$client->id}}">
 
 @csrf
@@ -29,3 +38,4 @@
 </div>
 <button type="submit">Save client!</button>
 </form>
+@endsection

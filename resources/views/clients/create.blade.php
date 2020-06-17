@@ -1,3 +1,7 @@
+@extends('layouts.layout', [
+    'title' => 'list of pets'
+])
+
 @section('content')
 
 <form method="post" action="/client">

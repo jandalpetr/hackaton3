@@ -2,6 +2,10 @@
 
 
 
+@extends('layouts.layout', [
+    'title' => 'welcome'
+])
+
 @section('content')
 
 

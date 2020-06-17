@@ -1,4 +1,11 @@
 
+@extends('layouts.layout', [
+    'title' => 'list of Saviours'
+])
+
+@section('content')
+
+
 <h2>List of clients</h2>
 <div class="form">
     <form action="/client/index" method="get">
@@ -20,7 +27,9 @@
         <p>email: {{$l->email}} </p>   
         <p>address: {{$l->address}}</p>    
         <p>phone: {{$l->phone}}</p>    
-
+        <p><a href="/client/{{$l->id}}">Check his profile</a></p>
     </div>
 
 @endforeach
+
+@endsection

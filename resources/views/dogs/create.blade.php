@@ -1,10 +1,8 @@
 @extends('layouts.layout', [
-    'title' => 'Add a new Pet'
+    'title' => 'list of pets'
 ])
 
 @section('content')
-
-
 
 
 <form method="post" action="/pet/store">

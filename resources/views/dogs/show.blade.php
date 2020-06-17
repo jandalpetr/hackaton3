@@ -1,3 +1,11 @@
+@extends('layouts.layout', [
+    'title' => 'Pet details'
+])
+
+@section('content')
+
+
+
 <h1>Details of the Dog</h1>
 
 
@@ -9,4 +17,4 @@
 {{$pet->weight}}<br>
 
 <a href="/pet/{{$pet->id}}/edit">edit this Pet</a>
-
+@endsection

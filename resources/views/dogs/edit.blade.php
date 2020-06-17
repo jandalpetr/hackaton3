@@ -1,3 +1,9 @@
+@extends('layouts.layout', [
+    'title' => 'edit the Pet'
+])
+
+@section('content')
+
 <form method="post" action="/pet/update/{{$pet->id}}">
 
 @csrf
@@ -30,3 +36,4 @@
 </div>
 <button type="submit">Save Pet!</button>
 </form>
+@endsection

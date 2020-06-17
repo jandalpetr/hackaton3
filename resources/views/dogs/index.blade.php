@@ -1,3 +1,13 @@
+@extends('layouts.layout', [
+    'title' => 'list of pets'
+])
+
+@section('content')
+
+
+
+
+
 <h1>List of dogs</h1>
 
 
@@ -5,3 +15,6 @@
 
 {{ $pet->name}}
 @endforeach
+
+
+@endsection

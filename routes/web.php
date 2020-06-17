@@ -30,7 +30,8 @@ Route::post('/pet/update/{id}', 'PetController@update')         ->name('pet.upda
 
 Route::get('/client/create', 'ClientsController@create')     ->name('client.create');
 Route::post('/client', 'ClientsController@store')             ->name('client.store');
-Route::get('/client/{id}', 'ClientsController@show')->where('id', '[0-9]+');
 Route::get('/client/{id}/edit', 'ClientsController@edit')         ->name('client.edit');
+Route::get('/client/{id}', 'ClientsController@show');
+
 Route::post('/client/update/{id}', 'ClientsController@update')         ->name('client.update');
 
